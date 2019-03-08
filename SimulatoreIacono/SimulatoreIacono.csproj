@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3D102A6-9DCE-43BA-880C-384F6BE515F2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SimulatoreIacono</RootNamespace>
+    <AssemblyName>SimulatoreIacono</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.dje.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="bin\Debug\Tipologia01\01.png" />
+    <Content Include="bin\Debug\Tipologia01\02.png" />
+    <Content Include="bin\Debug\Tipologia01\03.png" />
+    <Content Include="bin\Debug\Tipologia01\04.png" />
+    <Content Include="bin\Debug\Tipologia01\05.png" />
+    <Content Include="bin\Debug\Tipologia02\01.png" />
+    <Content Include="bin\Debug\Tipologia02\02.png" />
+    <Content Include="bin\Debug\Tipologia02\03.png" />
+    <Content Include="bin\Debug\Tipologia02\04.png" />
+    <Content Include="bin\Debug\Tipologia02\05.png" />
+    <Content Include="bin\Debug\Tipologia03\01.png" />
+    <Content Include="bin\Debug\Tipologia03\02.png" />
+    <Content Include="bin\Debug\Tipologia03\03.png" />
+    <Content Include="bin\Debug\Tipologia03\04.png" />
+    <Content Include="bin\Debug\Tipologia03\05.png" />
+    <Content Include="bin\Debug\Tipologia04\01.png" />
+    <Content Include="bin\Debug\Tipologia04\02.png" />
+    <Content Include="bin\Debug\Tipologia04\03.png" />
+    <Content Include="bin\Debug\Tipologia04\04.png" />
+    <Content Include="bin\Debug\Tipologia04\05.png" />
+    <Content Include="bin\Debug\Tipologia05\01.png" />
+    <Content Include="bin\Debug\Tipologia05\02.png" />
+    <Content Include="bin\Debug\Tipologia05\03.png" />
+    <Content Include="bin\Debug\Tipologia05\04.png" />
+    <Content Include="bin\Debug\Tipologia05\05.png" />
+    <Content Include="bin\Debug\Tipologia06\01.png" />
+    <Content Include="bin\Debug\Tipologia06\02.png" />
+    <Content Include="bin\Debug\Tipologia06\03.png" />
+    <Content Include="bin\Debug\Tipologia06\04.png" />
+    <Content Include="bin\Debug\Tipologia06\05.png" />
+    <Content Include="bin\Debug\Tipologia07\01.png" />
+    <Content Include="bin\Debug\Tipologia07\02.png" />
+    <Content Include="bin\Debug\Tipologia07\03.png" />
+    <Content Include="bin\Debug\Tipologia07\04.png" />
+    <Content Include="bin\Debug\Tipologia07\05.png" />
+    <Content Include="bin\Debug\Tipologia08\01.png" />
+    <Content Include="bin\Debug\Tipologia08\02.png" />
+    <Content Include="bin\Debug\Tipologia08\03.png" />
+    <Content Include="bin\Debug\Tipologia08\04.png" />
+    <Content Include="bin\Debug\Tipologia08\05.png" />
+    <Content Include="bin\Debug\Tipologia09\01.png" />
+    <Content Include="bin\Debug\Tipologia09\02.png" />
+    <Content Include="bin\Debug\Tipologia09\03.png" />
+    <Content Include="bin\Debug\Tipologia09\04.png" />
+    <Content Include="bin\Debug\Tipologia09\05.png" />
+    <Content Include="bin\Debug\Tipologia10\01.png" />
+    <Content Include="bin\Debug\Tipologia10\02.png" />
+    <Content Include="bin\Debug\Tipologia10\03.png" />
+    <Content Include="bin\Debug\Tipologia10\04.png" />
+    <Content Include="bin\Debug\Tipologia10\05.png" />
+    <Content Include="bin\Debug\Tipologia11\01.png" />
+    <Content Include="bin\Debug\Tipologia11\02.png" />
+    <Content Include="bin\Debug\Tipologia11\03.png" />
+    <Content Include="bin\Debug\Tipologia11\04.png" />
+    <Content Include="bin\Debug\Tipologia11\05.png" />
+    <Content Include="bin\Debug\Tipologia12\01.png" />
+    <Content Include="bin\Debug\Tipologia12\02.png" />
+    <Content Include="bin\Debug\Tipologia12\03.png" />
+    <Content Include="bin\Debug\Tipologia12\04.png" />
+    <Content Include="bin\Debug\Tipologia12\05.png" />
+    <Content Include="bin\Debug\Tipologia13\01.png" />
+    <Content Include="bin\Debug\Tipologia13\02.png" />
+    <Content Include="bin\Debug\Tipologia13\03.png" />
+    <Content Include="bin\Debug\Tipologia13\04.png" />
+    <Content Include="bin\Debug\Tipologia13\05.png" />
+    <Content Include="bin\Debug\Tipologia14\01.png" />
+    <Content Include="bin\Debug\Tipologia14\02.png" />
+    <Content Include="bin\Debug\Tipologia14\03.png" />
+    <Content Include="bin\Debug\Tipologia14\04.png" />
+    <Content Include="bin\Debug\Tipologia14\05.png" />
+    <Content Include="bin\Debug\Tipologia15\01.png" />
+    <Content Include="bin\Debug\Tipologia15\02.png" />
+    <Content Include="bin\Debug\Tipologia15\03.png" />
+    <Content Include="bin\Debug\Tipologia15\04.png" />
+    <Content Include="bin\Debug\Tipologia15\05.png" />
+    <Content Include="bin\Debug\Tipologia16\01.png" />
+    <Content Include="bin\Debug\Tipologia16\02.png" />
+    <Content Include="bin\Debug\Tipologia16\03.png" />
+    <Content Include="bin\Debug\Tipologia16\04.png" />
+    <Content Include="bin\Debug\Tipologia16\05.png" />
+    <Content Include="bin\Debug\Tipologia17\01.png" />
+    <Content Include="bin\Debug\Tipologia17\02.png" />
+    <Content Include="bin\Debug\Tipologia17\03.png" />
+    <Content Include="bin\Debug\Tipologia17\04.png" />
+    <Content Include="bin\Debug\Tipologia17\05.png" />
+    <Content Include="bin\Release\Tipologia01\01.png" />
+    <Content Include="bin\Release\Tipologia01\02.png" />
+    <Content Include="bin\Release\Tipologia01\03.png" />
+    <Content Include="bin\Release\Tipologia01\04.png" />
+    <Content Include="bin\Release\Tipologia01\05.png" />
+    <Content Include="bin\Release\Tipologia02\01.png" />
+    <Content Include="bin\Release\Tipologia02\02.png" />
+    <Content Include="bin\Release\Tipologia02\03.png" />
+    <Content Include="bin\Release\Tipologia02\04.png" />
+    <Content Include="bin\Release\Tipologia02\05.png" />
+    <Content Include="bin\Release\Tipologia03\01.png" />
+    <Content Include="bin\Release\Tipologia03\02.png" />
+    <Content Include="bin\Release\Tipologia03\03.png" />
+    <Content Include="bin\Release\Tipologia03\04.png" />
+    <Content Include="bin\Release\Tipologia03\05.png" />
+    <Content Include="bin\Release\Tipologia04\01.png" />
+    <Content Include="bin\Release\Tipologia04\02.png" />
+    <Content Include="bin\Release\Tipologia04\03.png" />
+    <Content Include="bin\Release\Tipologia04\04.png" />
+    <Content Include="bin\Release\Tipologia04\05.png" />
+    <Content Include="bin\Release\Tipologia05\01.png" />
+    <Content Include="bin\Release\Tipologia05\02.png" />
+    <Content Include="bin\Release\Tipologia05\03.png" />
+    <Content Include="bin\Release\Tipologia05\04.png" />
+    <Content Include="bin\Release\Tipologia05\05.png" />
+    <Content Include="bin\Release\Tipologia06\01.png" />
+    <Content Include="bin\Release\Tipologia06\02.png" />
+    <Content Include="bin\Release\Tipologia06\03.png" />
+    <Content Include="bin\Release\Tipologia06\04.png" />
+    <Content Include="bin\Release\Tipologia06\05.png" />
+    <Content Include="bin\Release\Tipologia07\01.png" />
+    <Content Include="bin\Release\Tipologia07\02.png" />
+    <Content Include="bin\Release\Tipologia07\03.png" />
+    <Content Include="bin\Release\Tipologia07\04.png" />
+    <Content Include="bin\Release\Tipologia07\05.png" />
+    <Content Include="bin\Release\Tipologia08\01.png" />
+    <Content Include="bin\Release\Tipologia08\02.png" />
+    <Content Include="bin\Release\Tipologia08\03.png" />
+    <Content Include="bin\Release\Tipologia08\04.png" />
+    <Content Include="bin\Release\Tipologia08\05.png" />
+    <Content Include="bin\Release\Tipologia09\01.png" />
+    <Content Include="bin\Release\Tipologia09\02.png" />
+    <Content Include="bin\Release\Tipologia09\03.png" />
+    <Content Include="bin\Release\Tipologia09\04.png" />
+    <Content Include="bin\Release\Tipologia09\05.png" />
+    <Content Include="bin\Release\Tipologia10\01.png" />
+    <Content Include="bin\Release\Tipologia10\02.png" />
+    <Content Include="bin\Release\Tipologia10\03.png" />
+    <Content Include="bin\Release\Tipologia10\04.png" />
+    <Content Include="bin\Release\Tipologia10\05.png" />
+    <Content Include="bin\Release\Tipologia11\01.png" />
+    <Content Include="bin\Release\Tipologia11\02.png" />
+    <Content Include="bin\Release\Tipologia11\03.png" />
+    <Content Include="bin\Release\Tipologia11\04.png" />
+    <Content Include="bin\Release\Tipologia11\05.png" />
+    <Content Include="bin\Release\Tipologia12\01.png" />
+    <Content Include="bin\Release\Tipologia12\02.png" />
+    <Content Include="bin\Release\Tipologia12\03.png" />
+    <Content Include="bin\Release\Tipologia12\04.png" />
+    <Content Include="bin\Release\Tipologia12\05.png" />
+    <Content Include="bin\Release\Tipologia13\01.png" />
+    <Content Include="bin\Release\Tipologia13\02.png" />
+    <Content Include="bin\Release\Tipologia13\03.png" />
+    <Content Include="bin\Release\Tipologia13\04.png" />
+    <Content Include="bin\Release\Tipologia13\05.png" />
+    <Content Include="bin\Release\Tipologia14\01.png" />
+    <Content Include="bin\Release\Tipologia14\02.png" />
+    <Content Include="bin\Release\Tipologia14\03.png" />
+    <Content Include="bin\Release\Tipologia14\04.png" />
+    <Content Include="bin\Release\Tipologia14\05.png" />
+    <Content Include="bin\Release\Tipologia15\01.png" />
+    <Content Include="bin\Release\Tipologia15\02.png" />
+    <Content Include="bin\Release\Tipologia15\03.png" />
+    <Content Include="bin\Release\Tipologia15\04.png" />
+    <Content Include="bin\Release\Tipologia15\05.png" />
+    <Content Include="bin\Release\Tipologia16\01.png" />
+    <Content Include="bin\Release\Tipologia16\02.png" />
+    <Content Include="bin\Release\Tipologia16\03.png" />
+    <Content Include="bin\Release\Tipologia16\04.png" />
+    <Content Include="bin\Release\Tipologia16\05.png" />
+    <Content Include="bin\Release\Tipologia17\01.png" />
+    <Content Include="bin\Release\Tipologia17\02.png" />
+    <Content Include="bin\Release\Tipologia17\03.png" />
+    <Content Include="bin\Release\Tipologia17\04.png" />
+    <Content Include="bin\Release\Tipologia17\05.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
